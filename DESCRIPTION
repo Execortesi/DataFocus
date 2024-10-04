@@ -1,0 +1,19 @@
+Package: DataFocus
+Title: Data Manipulation and Analysis Tools
+Version: 0.0.0.9000
+Authors@R: 
+    person("Exequiel", "Cortesi", , "exequiel.cortesi@example.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID")),
+    pearson("Bruno", "Carrara", , "bruno.carrara@example.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))       
+Description: DataFocus provides a collection of functions to simplify data manipulation, transformation, 
+    and exploratory data analysis. The package is designed to streamline workflows, offering intuitive 
+    functions for handling data frames, generating summaries, and visualizing patterns in datasets.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: 
+    R (>= 2.10)
+LazyData: true
