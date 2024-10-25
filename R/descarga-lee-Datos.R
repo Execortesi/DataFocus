@@ -18,15 +18,14 @@ descargar_leer_datos_estacion <- function(id_estacion, ruta_archivo) {
 }
 
 # Ejemplo de uso
-<<<<<<< HEAD
-  #NH0472 <- descargar_leer_datos_estacion("NH0472", "R/NH0472.csv")
-
-datos <- descargar_leer_datos_estacion("NH0437")
-=======
-#NH0472 <- descargar_leer_datos_estacion("NH0472", "data/NH0472.csv")
+  datos <- descargar_leer_datos_estacion("NH0472", "R/NH0472.csv")
 
 
->>>>>>> 5efa467c500738f41810b1d102f76f37efa4397d
+
+
+
+
+
 
 
 

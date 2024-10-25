@@ -1,13 +1,13 @@
 Package: DataFocus
-Title: Meteorological Data Reading and Analysis
+Title: Lectura y Análisis de Datos Meteorológicos.
 Version: 0.0.0.9000
 Authors@R: 
     person("Exequiel", "Cortesi", , "exequiel.cortesi@example.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID")),
     pearson("Bruno", "Carrara", , "bruno.carrara@example.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))       
-Description: DataFocus simplifies the reading, manipulation, and analysis of meteorological data, 
-    offering tools for handling time series, geographical data, and common weather data formats.
+Description: DataFocus simplifica la lectura, manipulación y análisis de datos meteorológicos, 
+ofreciendo herramientas para manejar series temporales, datos geográficos y formatos comunes de datos meteorológicos.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
