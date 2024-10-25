@@ -1,5 +1,5 @@
 #Funcion que detcta los dias de lluvia intensa
-detectar_dias_lluvia_intensa <-function(data,umbral){
+detectar_dias_lluvia_intensa <-function(datos,umbral){
   if(!"precipitacion_pluviometrica" %in% colnames(data)){
     stop("La columna 'precipitacion_pluviometrica' no existe en el dataset.")
   }
@@ -10,4 +10,4 @@ detectar_dias_lluvia_intensa <-function(data,umbral){
 
 }
 
-dias_lluviosos<-detectar_dias_lluvia_intensa(datos,20)
+# dias_lluviosos<-detectar_dias_lluvia_intensa(datos,20)

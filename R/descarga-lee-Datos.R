@@ -1,5 +1,5 @@
 # Descarga y lee los datos de estaciones
-descargar_leer_datos_estacion <- function(id_estacion) {
+descargar_leer_datos_estacion <- function(id_estacion, ruta_archivo) {
   estaciones_urls <- list(
     NH0472 = "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0472.csv",
     NH0910 = "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0910.csv",
@@ -8,19 +8,19 @@ descargar_leer_datos_estacion <- function(id_estacion) {
     NH0437 = "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0437.csv"
   )
 
-  # Obtener la URL correspondiente a la estación
-    url_base <- estaciones_urls[[id_estacion]]
+  url_base <- estaciones_urls[[id_estacion]]
 
-  # Leer directamente el CSV desde la URL sin guardarlo
-  datos_estacion <- read.csv(url_base)
+  download.file(url_base, ruta_archivo)
+
+  datos_estacion <- read.csv(ruta_archivo)
 
   return(datos_estacion)
 }
 
 # Ejemplo de uso
-  #NH0472 <- descargar_leer_datos_estacion("NH0472", "R/NH0472.csv")
+#NH0472 <- descargar_leer_datos_estacion("NH0472", "data/NH0472.csv")
 
-datos <- descargar_leer_datos_estacion("NH0472")
+
 
 
 
