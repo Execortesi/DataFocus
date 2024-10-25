@@ -20,7 +20,7 @@ descargar_leer_datos_estacion <- function(id_estacion) {
 # Ejemplo de uso
   #NH0472 <- descargar_leer_datos_estacion("NH0472", "R/NH0472.csv")
 
-datos <- descargar_leer_datos_estacion("NH0472")
+datos <- descargar_leer_datos_estacion("NH0437")
 
 
 
