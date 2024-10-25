@@ -9,7 +9,7 @@ descargar_leer_datos_estacion <- function(id_estacion) {
   )
 
   # Obtener la URL correspondiente a la estación
-  url_base <- estaciones_urls[[id_estacion]]
+    url_base <- estaciones_urls[[id_estacion]]
 
   # Leer directamente el CSV desde la URL sin guardarlo
   datos_estacion <- read.csv(url_base)
@@ -18,7 +18,9 @@ descargar_leer_datos_estacion <- function(id_estacion) {
 }
 
 # Ejemplo de uso
-# NH0472 <- descargar_leer_datos_estacion("NH0472", "R/NH0472.csv")
+  #NH0472 <- descargar_leer_datos_estacion("NH0472", "R/NH0472.csv")
+
+datos <- descargar_leer_datos_estacion("NH0472")
 
 
 
