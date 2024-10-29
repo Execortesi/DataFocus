@@ -1,4 +1,21 @@
-# Descarga y lee los datos de estaciones
+#' Descarga y lee datos de estaciones
+#'
+#' Esta función descarga datos de una estación meteorlóguca especifica y los lee en un data frame.
+#'
+#' @param id_estacion Un identificador de estación meteorologica específica. Debe ser uno de los siguientes: "NH0472", "NH0910", "NH0046", "NH0098", "NH0437".
+#' @param ruta_archivo Ruta de destino donde se guardara el archivo descargado.
+#'
+#'
+#' @return
+#' Un data frame que contiene los datos de estación meteorlógica seleccionada.
+#'
+#'
+#' @examples
+#' descargar_leer_datos_estacion("NH0472", "data/NH0472.csv")
+#'
+#'
+#' @export
+
 descargar_leer_datos_estacion <- function(id_estacion, ruta_archivo) {
   estaciones_urls <- list(
     NH0472 = "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0472.csv",
@@ -18,7 +35,13 @@ descargar_leer_datos_estacion <- function(id_estacion, ruta_archivo) {
 }
 
 # Ejemplo de uso
-  datos <- descargar_leer_datos_estacion("NH0472", "R/NH0472.csv")
+#datos <- descargar_leer_datos_estacion("NH0472", "data/NH0472.csv")
+
+NH0472 <- descargar_leer_datos_estacion("NH0472", "data/NH0472.csv")
+NH0910 <- descargar_leer_datos_estacion("NH0910", "data/NH0910.csv")
+NH0046 <- descargar_leer_datos_estacion("NH0046", "data/NH0046.csv")
+NH0098 <- descargar_leer_datos_estacion("NH0098", "data/NH0098.csv")
+NH0437 <- descargar_leer_datos_estacion("NH0437", "data/NH0437.csv")
 
 
 
