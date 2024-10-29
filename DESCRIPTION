@@ -7,7 +7,7 @@ Authors@R:
     pearson("Bruno", "Carrara", , "bruno.carrara@example.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))       
 Description: DataFocus simplifica la lectura, manipulación y análisis de datos meteorológicos, 
-ofreciendo herramientas para manejar series temporales, datos geográficos y formatos comunes de datos meteorológicos.
+    ofreciendo herramientas para manejar series temporales, datos geográficos y formatos comunes de datos meteorológicos.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
