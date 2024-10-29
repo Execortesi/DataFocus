@@ -1,8 +1,25 @@
-# Generá una función grafico_temperatura_mensual que devuelva un gráfico que muestre el promedio mensual de la temperatura de abrigo
 # Paquetes necesarios
 library(ggplot2)
 library(dplyr)
 
+#' Genera un gráfico de temperatura promedio mensual
+#'
+#' @param datos Un data frame que contiene datos meteorlógicos. Debe incluir las columnas 'fecha', 'id' y 'temperatura_abrigo_150cm'.
+#' @param colores Argumento para indicar que colores usamos oara el grafico.
+#' @param titulo Titulo del grafico. El valor predeterminado es "Temperatura".
+#'
+#' @return Grafico que muestra el promedio mensual de la temperatura de abrigo.
+#' @import ggplot2
+#' @import dplyr
+#'
+#'
+#' @examples
+#' datos <- descargar_leer_datos_estacion("NH0472", "data/NH0472.csv")
+#' grafico_temperatura_mensual(datos, titulo = "Temperatura Promedio Mensual")
+#' print(grafico)
+#'
+#'
+#' @export
 grafico_temperatura_mensual <- function(datos, colores = NULL, titulo = "Temperatura") {
   # Asegúrate de que la columna fecha esté en el formato correcto
   datos$fecha <- as.Date(datos$fecha)  # Ajusta esto según el formato de tus datos
