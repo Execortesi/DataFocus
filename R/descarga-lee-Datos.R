@@ -11,32 +11,34 @@
 #'
 #'
 #' @examples
-#' descargar_leer_datos_estacion("NH0472", "data/NH0472.csv")
+#' descargar_leer_datos_estacion("NH0046")
 #'
 #'
 #' @export
 
-descargar_leer_datos_estacion <- function(id_estacion, ruta_archivo) {
-  estaciones_urls <- list(
-    NH0472 = "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0472.csv",
-    NH0910 = "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0910.csv",
-    NH0046 = "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0046.csv",
-    NH0098 = "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0098.csv",
-    NH0437 = "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0437.csv"
-  )
+descargar_leer_datos_estacion <- function(id_estacion) {
+  # Construir la URL con el ID de la estación
+  estacion_url <- paste0("https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/", id_estacion, ".csv")
+  # Generar la ruta temporal del archivo
+  ruta_archivo <- paste0(tempdir(), "/", id_estacion, ".csv")
 
-  url_base <- estaciones_urls[[id_estacion]]
-
-  download.file(url_base, ruta_archivo)
-
-  datos_estacion <- read.csv(ruta_archivo)
+  # Verificar si el archivo ya existe en la ruta temporal
+  if (file.exists(ruta_archivo)) {
+    datos_estacion <- read.csv(ruta_archivo)
+    cli::cli_inform("Lectura del archivo de la estación '{id_estacion}' desde el directorio temporal.")
+  } else {
+    # Intentar descargar y leer el archivo
+    tryCatch({
+      download.file(estacion_url, ruta_archivo)
+      datos_estacion <- read.csv(ruta_archivo)
+      cli::cli_inform("Descargando y leyendo el archivo de la estación '{id_estacion}' en el directorio temporal.")
+    }, error = function(e) {
+      stop("Error al descargar los datos: ", conditionMessage(e))
+    })
+  }
 
   return(datos_estacion)
 }
-
-# Ejemplo de uso
-#datos <- descargar_leer_datos_estacion("NH0472", "data/NH0472.csv")
-
 
 
 
