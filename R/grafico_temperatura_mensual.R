@@ -14,7 +14,7 @@ library(dplyr)
 #'
 #'
 #' @examples
-#' datos <- descargar_leer_datos_estacion("NH0472", "data/NH0472.csv")
+#' datos <- descargar_leer_datos_estacion("NH0472")
 #' grafico_temperatura_mensual(datos, titulo = "Temperatura Promedio Mensual")
 #' print(grafico)
 #'

@@ -49,11 +49,13 @@ library(DataFocus)
 ```{r}
 NH0437 <- descargar_leer_datos_estacion("NH0437")
 ```
+
 ```{r}
 library(ggplot2)
 library(dplyr)
 grafico_temperatura_mensual(NH0437, colores = "red", titulo = "Temperatura")
 ```
+
 ```{r}
 tabla_resumen_temperatura(NH0437)
 ```
