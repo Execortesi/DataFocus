@@ -21,10 +21,45 @@ knitr::opts_chunk$set(
 
 El objetivo de este paquete es a partir de un conjunto de datos y diferentes funciones poder sacar diferentes conclusiones dependiendo de nuestros ambiciones.
 
-## Installation
+## Instalación
 
 You can install the development version of DataFocus from [GitHub](https://github.com/) with:
 
-\`\`\` r \# install.packages("pak") pak::pak("Execortesi/DataFocus")
+```{r}
+#install.packages("pak")
+pak::pak("Execortesi/DataFocus")
+```
+
+## Funciones
+
+  1. `descarga-lee-Datos`: Toma el parametro que le pasemos correspondiente a una estación meteorológica y permite la lectura y/o descarga del dataset de la estación que se solicite.
+  2. `grafico_temperatura_mensual`: Recibe un data set con datos de una o mas estaciones y devuelve un grafico con el promedio mensual de la temperatura de abrigo a 150 cm.
+  3. `tabla_resumen_temperatura`: Recibe uno o más data sets de las estaciones y devuelve una tabla de resumen de la temperatura de abrigo a 150 cm.
+
+## Ejemplo
+Este es un ejemplo básico que muestra como instalar la librería del paquete:
+
+```{r}
+library(DataFocus)
+```
+
+## Uso de las funciones
+
+```{r}
+NH0437 <- descargar_leer_datos_estacion("NH0437", "data/NH0437.csv")
+```
+```{r}
+library(ggplot2)
+library(dplyr)
+grafico_temperatura_mensual(NH0437, colores = "red", titulo = "Temperatura")
+```
+```{r}
+tabla_resumen_temperatura(NH0437)
+```
+## Autores del paquete
+
+  -Exequiel Cortesi: Estudiante de la Licenciatura en Ciencia de Datos en la Universidad Austral de Rosario.
+  
+  -Bruno Carrara: Estudiante de la Licenciatura en Ciencia de Datos en la Universidad Austral de Rosario.
 
 
