@@ -25,32 +25,6 @@ El objetivo de este paquete es a partir de un conjunto de datos y diferentes fun
 
 You can install the development version of DataFocus from [GitHub](https://github.com/) with:
 
-``` r
-# install.packages("pak")
-pak::pak("Execortesi/DataFocus")
-
-
-
-Dudas sobre el paquete contactar a:
-
-- Email: bcarrara@mail.austral.edu.ar
-- Email: ecortesi@mail.austral.edu.ar
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\`\`\` r \# install.packages("pak") pak::pak("Execortesi/DataFocus")
 
 
