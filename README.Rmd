@@ -46,7 +46,7 @@ library(DataFocus)
 ## Uso de las funciones
 
 ```{r}
-NH0437 <- descargar_leer_datos_estacion("NH0437", "data/NH0437.csv")
+NH0437 <- descargar_leer_datos_estacion("NH0437")
 ```
 ```{r}
 library(ggplot2)
@@ -62,4 +62,11 @@ tabla_resumen_temperatura(NH0437)
   
   -Bruno Carrara: Estudiante de la Licenciatura en Ciencia de Datos en la Universidad Austral de Rosario.
 
+## Como se puede comtribuir al paquete
+
+Si deseas realizar contribuciones al paquete, ya sea para agregar mejoras, corregir errores o proponer nuevas funciones, segui los siguientes pasos:
+
+  -Fork y clona el repositorio: Haz un fork de este repositorio en tu cuenta de GitHub y clona el repositorio en tu máquina local.
+
+  -Realiza la contribución y hace un pull request: Realiza los cambios que consideres necesarios en tu copia del repositorio. Luego, abri un pull request a la rama principal del proyecto con una descripción clara del propósito de tu contribución.
 

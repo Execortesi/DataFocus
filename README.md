@@ -18,20 +18,19 @@ You can install the development version of DataFocus from
 ``` r
 #install.packages("pak")
 pak::pak("Execortesi/DataFocus")
-#> ✔ Updated metadata database: 5.63 MB in 15 files.
-#> ℹ Updating metadata database✔ Updating metadata database ... done
+#> ℹ Loading metadata database✔ Loading metadata database ... done
 #>  
 #> → Will update 1 package.
 #> → Will download 1 package with unknown size.
-#> + DataFocus 0.0.0.9000 → 0.0.0.9000 👷🏽‍♂️🔧 ⬇ (GitHub: 20c516a)
+#> + DataFocus 0.0.0.9000 → 0.0.0.9000 👷🔧 ⬇ (GitHub: a721a89)
 #> ℹ Getting 1 pkg with unknown size
-#> ✔ Got DataFocus 0.0.0.9000 (source) (2.31 MB)
+#> ✔ Got DataFocus 0.0.0.9000 (source) (1.51 MB)
 #> ℹ Packaging DataFocus 0.0.0.9000
-#> ✔ Packaged DataFocus 0.0.0.9000 (5.3s)
+#> ✔ Packaged DataFocus 0.0.0.9000 (1.3s)
 #> ℹ Building DataFocus 0.0.0.9000
-#> ✔ Built DataFocus 0.0.0.9000 (6.5s)
-#> ✔ Installed DataFocus 0.0.0.9000 (github::Execortesi/DataFocus@20c516a) (51ms)
-#> ✔ 1 pkg + 31 deps: kept 25, upd 1, dld 1 (NA B) [50.1s]
+#> ✔ Built DataFocus 0.0.0.9000 (5.9s)
+#> ✔ Installed DataFocus 0.0.0.9000 (github::Execortesi/DataFocus@a721a89) (65ms)
+#> ✔ 1 pkg + 31 deps: kept 25, upd 1, dld 1 (NA B) [23.4s]
 ```
 
 ## Funciones
@@ -58,7 +57,9 @@ library(DataFocus)
 ## Uso de las funciones
 
 ``` r
-NH0437 <- descargar_leer_datos_estacion("NH0437", "data/NH0437.csv")
+NH0437 <- descargar_leer_datos_estacion("NH0437")
+#> Descargando y leyendo el archivo de la estación 'NH0437' en el directorio
+#> temporal.
 ```
 
 ``` r
@@ -92,3 +93,17 @@ la Universidad Austral de Rosario.
 
 -Bruno Carrara: Estudiante de la Licenciatura en Ciencia de Datos en la
 Universidad Austral de Rosario.
+
+## Como se puede comtribuir al paquete
+
+Si deseas realizar contribuciones al paquete, ya sea para agregar
+mejoras, corregir errores o proponer nuevas funciones, segui los
+siguientes pasos:
+
+-Fork y clona el repositorio: Haz un fork de este repositorio en tu
+cuenta de GitHub y clona el repositorio en tu máquina local.
+
+-Realiza la contribución y hace un pull request: Realiza los cambios que
+consideres necesarios en tu copia del repositorio. Luego, abri un pull
+request a la rama principal del proyecto con una descripción clara del
+propósito de tu contribución.
