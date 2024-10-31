@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-#' Tabla resumen
-#'
-#' Esta funcion devuelve una tabla resumen de la temperatura abrigo
-#'
-#' @param datos
-#'
-#' @return
-#' (resumen)
-#'
-#' @examples
-#'tabla_resumen_temperatura <- function(datos) {
-#'  resumen <- datos %>%
-#'    group_by(id) %>%
-#'    summarise(
-#'      min_temp = min(temperatura_abrigo_150cm, na.rm = TRUE),
-#'      max_temp = max(temperatura_abrigo_150cm, na.rm = TRUE),
-#'      mean_temp = mean(temperatura_abrigo_150cm, na.rm = TRUE)
-#'    )
-#'  return(resumen)
-#'}
-=======
 #' Generar tabla resumen de temperatura para una o más estaciones.
 #'
 #' Esta función crea una tabla resumen de la temperatura registrada en la columna 'temperatura_abrigo_150cm' para una o más estaciones, mostrando los valores mínimos, máximos y el promedio.
@@ -44,7 +22,4 @@ tabla_resumen_temperatura <- function(datos) {
     )
   return(resumen)
 }
->>>>>>> 5d61068bcab158fa266e94782fcb9ac8a98eb1a1
-
-
 
