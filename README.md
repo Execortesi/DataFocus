@@ -4,6 +4,9 @@
 # DataFocus
 
 <!-- badges: start -->
+
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 El objetivo de este paquete es a partir de un conjunto de datos y
@@ -20,17 +23,8 @@ You can install the development version of DataFocus from
 pak::pak("Execortesi/DataFocus")
 #> ℹ Loading metadata database✔ Loading metadata database ... done
 #>  
-#> → Will update 1 package.
-#> → Will download 1 package with unknown size.
-#> + DataFocus 0.0.0.9000 → 0.0.0.9000 👷🔧 ⬇ (GitHub: a721a89)
-#> ℹ Getting 1 pkg with unknown size
-#> ✔ Got DataFocus 0.0.0.9000 (source) (1.51 MB)
-#> ℹ Packaging DataFocus 0.0.0.9000
-#> ✔ Packaged DataFocus 0.0.0.9000 (1.3s)
-#> ℹ Building DataFocus 0.0.0.9000
-#> ✔ Built DataFocus 0.0.0.9000 (5.9s)
-#> ✔ Installed DataFocus 0.0.0.9000 (github::Execortesi/DataFocus@a721a89) (65ms)
-#> ✔ 1 pkg + 31 deps: kept 25, upd 1, dld 1 (NA B) [23.4s]
+#> ℹ No downloads are needed
+#> ✔ 1 pkg + 31 deps: kept 26 [3.9s]
 ```
 
 ## Funciones
@@ -66,7 +60,7 @@ NH0437 <- descargar_leer_datos_estacion("NH0437")
 library(ggplot2)
 library(dplyr)
 #> 
-#> Attaching package: 'dplyr'
+#> Adjuntando el paquete: 'dplyr'
 #> The following objects are masked from 'package:stats':
 #> 
 #>     filter, lag
