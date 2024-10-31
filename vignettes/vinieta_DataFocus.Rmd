@@ -1,0 +1,35 @@
+---
+title: "vinieta_DataFocus"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{vinieta_DataFocus}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(datos)
+```
+
+Podemos mostrar como usar la funcion `tabla_resumen_temperatura()`:
+```{r}
+tabla_resumen_temperatura <- function(datos) {
+  resumen <- datos %>%
+    group_by(id) %>%
+    summarise(
+      min_temp = min(temperatura_abrigo_150cm, na.rm = TRUE),
+      max_temp = max(temperatura_abrigo_150cm, na.rm = TRUE),
+      mean_temp = mean(temperatura_abrigo_150cm, na.rm = TRUE)
+    )
+  return(resumen)
+}
+```
+
+
