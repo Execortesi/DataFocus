@@ -28,20 +28,29 @@ You can install the development version of DataFocus from [GitHub](https://githu
 ``` r
 # install.packages("pak")
 pak::pak("Execortesi/DataFocus")
-```
 
-## Example
 
-Este es un ejemplo basico de como utilzar una funcion:
 
-```{r example}
+Dudas sobre el paquete contactar a:
 
-      
+- Email: bcarrara@mail.austral.edu.ar
+- Email: ecortesi@mail.austral.edu.ar
 
 
 
 
 
-```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
