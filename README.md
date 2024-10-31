@@ -9,7 +9,7 @@
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
-El objetivo de este paquete es a partir de un conjunto de datos y
+El objetivo de este paquete es a partir de un conjunto de datos sobre datos meterologicos y
 diferentes funciones poder sacar diferentes conclusiones dependiendo de
 nuestros ambiciones.
 
