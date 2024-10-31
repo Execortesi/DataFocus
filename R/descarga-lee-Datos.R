@@ -1,9 +1,8 @@
 #' Descarga y lee datos de estaciones
 #'
-#' Esta función descarga datos de una estación meteorlóguca especifica y los lee en un data frame.
+#' Esta función descarga datos de una estación meteorlógica especifica y los lee en un data frame.
 #'
 #' @param id_estacion Un identificador de estación meteorologica específica. Debe ser uno de los siguientes: "NH0472", "NH0910", "NH0046", "NH0098", "NH0437".
-#' @param ruta_archivo Ruta de destino donde se guardara el archivo descargado.
 #'
 #'
 #' @return
