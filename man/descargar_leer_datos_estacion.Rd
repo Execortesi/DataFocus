@@ -4,7 +4,7 @@
 \alias{descargar_leer_datos_estacion}
 \title{Descarga y lee datos de estaciones}
 \usage{
-descargar_leer_datos_estacion(id_estacion, ruta_archivo)
+descargar_leer_datos_estacion(id_estacion)
 }
 \arguments{
 \item{id_estacion}{Un identificador de estación meteorologica específica. Debe ser uno de los siguientes: "NH0472", "NH0910", "NH0046", "NH0098", "NH0437".}
@@ -18,7 +18,7 @@ Un data frame que contiene los datos de estación meteorlógica seleccionada.
 Esta función descarga datos de una estación meteorlóguca especifica y los lee en un data frame.
 }
 \examples{
-descargar_leer_datos_estacion("NH0472", "data/NH0472.csv")
+descargar_leer_datos_estacion("NH0046")
 
 
 }
