@@ -14,22 +14,29 @@ knitr::opts_chunk$set(
 )
 ```
 
+## Introducción al uso del paquete
+
+1- Debemos importar la libreria de nuestro paquete
 ```{r setup}
-library(datos)
+library(DataFocus)
 ```
 
-Podemos mostrar como usar la funcion `tabla_resumen_temperatura()`:
+2- Debemos hacer una descarga de el/los data sets con los que queramos trabajar. Para esto debemos llamar a la funcion `descarga-lee-Datos`, y asignarle como parametro el nombre del data set.
+
 ```{r}
-tabla_resumen_temperatura <- function(datos) {
-  resumen <- datos %>%
-    group_by(id) %>%
-    summarise(
-      min_temp = min(temperatura_abrigo_150cm, na.rm = TRUE),
-      max_temp = max(temperatura_abrigo_150cm, na.rm = TRUE),
-      mean_temp = mean(temperatura_abrigo_150cm, na.rm = TRUE)
-    )
-  return(resumen)
-}
+estacion_prueba <- descargar_leer_datos_estacion("NH0098")
+head(estacion_prueba)
+```
+3- Una vez descargado el/los data sets podemos hacer uso de las funciones que creamos, que son las siguientes:
+
+`tabla_resumen_temperatura()`:
+```{r}
+tabla_resumen_temperatura(estacion_prueba)
+```
+`grafico_temperatura_mensual`
+
+```{r}
+grafico_temperatura_mensual(estacion_prueba, colores = "blue", titulo = "Temperatura")
 ```
 
 
