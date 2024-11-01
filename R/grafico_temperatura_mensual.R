@@ -14,9 +14,8 @@ library(dplyr)
 #'
 #'
 #' @examples
-#' datos <- descargar_leer_datos_estacion("NH0472")
-#' grafico_temperatura_mensual(datos, titulo = "Temperatura Promedio Mensual")
-#' print(grafico)
+#' grafico_temperatura_mensual(datos, colores = "red", titulo = "Temperatura Promedio Mensual")
+#'
 #'
 #'
 #' @export
@@ -40,4 +39,4 @@ grafico_temperatura_mensual <- function(datos, colores = NULL, titulo = "Tempera
 
   return(grafico)
 }
-#' pruebaa
+

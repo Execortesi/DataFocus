@@ -1,5 +1,5 @@
 Package: DataFocus
-Title: Lectura y Análisis de Datos Meteorológicos.
+Title: Lectura y Análisis de Datos Meteorológicos
 Version: 0.0.0.9000
 Authors@R: 
     c(person("Exequiel", "Cortesi", email = "execonerc@gmail.com", role = c("aut", "cre")),
@@ -21,6 +21,7 @@ Suggests:
     testthat (>= 3.0.0)
 VignetteBuilder: knitr
 Imports: 
+    ggplot2,
     dplyr,
-    ggplot2
+    cli
 Config/testthat/edition: 3
