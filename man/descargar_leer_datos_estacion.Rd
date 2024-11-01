@@ -8,14 +8,12 @@ descargar_leer_datos_estacion(id_estacion)
 }
 \arguments{
 \item{id_estacion}{Un identificador de estación meteorologica específica. Debe ser uno de los siguientes: "NH0472", "NH0910", "NH0046", "NH0098", "NH0437".}
-
-\item{ruta_archivo}{Ruta de destino donde se guardara el archivo descargado.}
 }
 \value{
 Un data frame que contiene los datos de estación meteorlógica seleccionada.
 }
 \description{
-Esta función descarga datos de una estación meteorlóguca especifica y los lee en un data frame.
+Esta función descarga datos de una estación meteorlógica especifica y los lee en un data frame.
 }
 \examples{
 descargar_leer_datos_estacion("NH0046")
