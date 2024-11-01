@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     c(person("Exequiel", "Cortesi", email = "execonerc@gmail.com", role = c("aut", "cre")),
       person("Bruno", "Carrara", email = "brunocarrara1027@gmail.com", role = "aut"))       
-Maintaner: "Exequiel", "Cortesi"<execonerc@gmail.com>
+Maintainer: "Exequiel", "Cortesi"<execonerc@gmail.com>
 Description: DataFocus simplifica la lectura, manipulación y análisis de datos meteorológicos, 
     ofreciendo herramientas para manejar series temporales, datos geográficos y formatos comunes de datos meteorológicos.
 License: MIT + file LICENSE
