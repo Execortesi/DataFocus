@@ -7,7 +7,9 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+
 [![codecov](https://codecov.io/github/Execortesi/DataFocus/graph/badge.svg?token=0N0N9BFF8F)](https://codecov.io/github/Execortesi/DataFocus)
+
 <!-- badges: end -->
 
 El objetivo de este paquete es a partir de un conjunto de datos sobre datos meterologicos y
