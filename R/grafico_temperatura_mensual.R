@@ -1,6 +1,4 @@
-# Paquetes necesarios
-library(ggplot2)
-library(dplyr)
+utils::globalVariables(c("fecha", "mes", "temperatura_abrigo_150cm", "mean_temp"))
 
 #' Genera un gráfico de temperatura promedio mensual
 #'
@@ -11,10 +9,11 @@ library(dplyr)
 #' @return Grafico que muestra el promedio mensual de la temperatura de abrigo.
 #' @import ggplot2
 #' @import dplyr
-#'
+#' @importFrom grDevices colors
+#' @importFrom utils download.file read.csv
 #'
 #' @examples
-#' grafico_temperatura_mensual(datos, colores = "red", titulo = "Temperatura Promedio Mensual")
+#' grafico_temperatura_mensual(NH0437, colores = "red", titulo = "Temperatura Promedio Mensual")
 #'
 #'
 #'

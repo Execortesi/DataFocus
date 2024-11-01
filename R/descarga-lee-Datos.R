@@ -8,6 +8,8 @@
 #' @return
 #' Un data frame que contiene los datos de estación meteorlógica seleccionada.
 #'
+#' @importFrom grDevices colors
+#' @importFrom utils download.file read.csv
 #'
 #' @examples
 #' descargar_leer_datos_estacion("NH0046")

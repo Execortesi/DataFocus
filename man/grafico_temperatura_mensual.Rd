@@ -20,7 +20,7 @@ Grafico que muestra el promedio mensual de la temperatura de abrigo.
 Genera un gráfico de temperatura promedio mensual
 }
 \examples{
-grafico_temperatura_mensual(datos, colores = "red", titulo = "Temperatura Promedio Mensual")
+grafico_temperatura_mensual(NH0437, colores = "red", titulo = "Temperatura Promedio Mensual")
 
 
 

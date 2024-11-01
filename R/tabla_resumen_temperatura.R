@@ -1,3 +1,5 @@
+utils::globalVariables(c("fecha", "mes", "temperatura_abrigo_150cm", "mean_temp"))
+
 #' Generar tabla resumen de temperatura para una o más estaciones.
 #'
 #' Esta función crea una tabla resumen de la temperatura registrada en la columna 'temperatura_abrigo_150cm' para una o más estaciones, mostrando los valores mínimos, máximos y el promedio.
