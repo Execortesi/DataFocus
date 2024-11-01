@@ -6,7 +6,7 @@
 <!-- badges: start -->
 
 [![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)[![R-CMD-check](https://github.com/ExeCortesi/DataFocus/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ExeCortesi/DataFocus/actions/workflows/R-CMD-check.yaml)[![.github/workflows/R-CMD-check.yaml](https://github.com/Execortesi/DataFocus/actions/workflows/R-CMD-check.yaml/badge.svg?branch=master)](https://github.com/Execortesi/DataFocus/actions/workflows/R-CMD-check.yaml)
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 El objetivo de este paquete es a partir de un conjunto de datos sobre
