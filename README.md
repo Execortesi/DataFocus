@@ -6,15 +6,12 @@
 <!-- badges: start -->
 
 [![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-
-[![codecov](https://codecov.io/github/Execortesi/DataFocus/graph/badge.svg?token=0N0N9BFF8F)](https://codecov.io/github/Execortesi/DataFocus)
-
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)[![R-CMD-check](https://github.com/ExeCortesi/DataFocus/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ExeCortesi/DataFocus/actions/workflows/R-CMD-check.yaml)[![.github/workflows/R-CMD-check.yaml](https://github.com/Execortesi/DataFocus/actions/workflows/R-CMD-check.yaml/badge.svg?branch=master)](https://github.com/Execortesi/DataFocus/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-El objetivo de este paquete es a partir de un conjunto de datos sobre datos meterologicos y
-diferentes funciones poder sacar diferentes conclusiones dependiendo de
-nuestros ambiciones.
+El objetivo de este paquete es a partir de un conjunto de datos sobre
+datos meterologicos y diferentes funciones poder sacar diferentes
+conclusiones dependiendo de nuestros ambiciones.
 
 ## Instalación
 
@@ -26,8 +23,17 @@ You can install the development version of DataFocus from
 pak::pak("Execortesi/DataFocus")
 #> ℹ Loading metadata database✔ Loading metadata database ... done
 #>  
-#> ℹ No downloads are needed
-#> ✔ 1 pkg + 31 deps: kept 26 [3.9s]
+#> → Will update 1 package.
+#> → Will download 1 package with unknown size.
+#> + DataFocus 0.0.0.9000 → 0.0.0.9000 👷🏿‍♀️🔧 ⬇ (GitHub: e9a5c70)
+#> ℹ Getting 1 pkg with unknown size
+#> ✔ Got DataFocus 0.0.0.9000 (source) (1.50 MB)
+#> ℹ Packaging DataFocus 0.0.0.9000
+#> ✔ Packaged DataFocus 0.0.0.9000 (1.6s)
+#> ℹ Building DataFocus 0.0.0.9000
+#> ✔ Built DataFocus 0.0.0.9000 (7.1s)
+#> ✔ Installed DataFocus 0.0.0.9000 (github::Execortesi/DataFocus@e9a5c70) (84ms)
+#> ✔ 1 pkg + 31 deps: kept 25, upd 1, dld 1 (NA B) [37.1s]
 ```
 
 ## Funciones
@@ -63,7 +69,7 @@ NH0437 <- descargar_leer_datos_estacion("NH0437")
 library(ggplot2)
 library(dplyr)
 #> 
-#> Adjuntando el paquete: 'dplyr'
+#> Attaching package: 'dplyr'
 #> The following objects are masked from 'package:stats':
 #> 
 #>     filter, lag
