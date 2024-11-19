@@ -24,5 +24,6 @@ VignetteBuilder: knitr
 Imports: 
     ggplot2,
     dplyr,
-    cli
+    cli,
+    magrittr
 Config/testthat/edition: 3
