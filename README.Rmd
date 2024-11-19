@@ -28,7 +28,7 @@ You can install the development version of DataFocus from [GitHub](https://githu
 
 ```{r}
 #install.packages("pak")
-pak::pak("Execortesi/DataFocus")
+#pak::pak("Execortesi/DataFocus")
 ```
 
 ## Funciones

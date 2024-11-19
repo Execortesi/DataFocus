@@ -20,20 +20,7 @@ You can install the development version of DataFocus from
 
 ``` r
 #install.packages("pak")
-pak::pak("Execortesi/DataFocus")
-#> ℹ Loading metadata database✔ Loading metadata database ... done
-#>  
-#> → Will update 1 package.
-#> → Will download 1 package with unknown size.
-#> + DataFocus 0.0.0.9000 → 0.0.0.9000 👷🏿‍♀️🔧 ⬇ (GitHub: e9a5c70)
-#> ℹ Getting 1 pkg with unknown size
-#> ✔ Got DataFocus 0.0.0.9000 (source) (1.50 MB)
-#> ℹ Packaging DataFocus 0.0.0.9000
-#> ✔ Packaged DataFocus 0.0.0.9000 (1.6s)
-#> ℹ Building DataFocus 0.0.0.9000
-#> ✔ Built DataFocus 0.0.0.9000 (7.1s)
-#> ✔ Installed DataFocus 0.0.0.9000 (github::Execortesi/DataFocus@e9a5c70) (84ms)
-#> ✔ 1 pkg + 31 deps: kept 25, upd 1, dld 1 (NA B) [37.1s]
+#pak::pak("Execortesi/DataFocus")
 ```
 
 ## Funciones

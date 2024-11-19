@@ -3,8 +3,6 @@
 export(descargar_leer_datos_estacion)
 export(grafico_temperatura_mensual)
 export(tabla_resumen_temperatura)
-import(dplyr)
-import(ggplot2)
 importFrom(grDevices,colors)
 importFrom(utils,download.file)
 importFrom(utils,read.csv)
